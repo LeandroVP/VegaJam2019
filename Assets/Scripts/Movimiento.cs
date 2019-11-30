@@ -17,11 +17,13 @@ public class Movimiento : MonoBehaviour
     float currentVelocity;
 
     bool miraDerecha;
+    SpriteRenderer sprite;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentVelocity = 0;
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -30,7 +32,19 @@ public class Movimiento : MonoBehaviour
         transform.Translate(new Vector3((ejeX * (Time.deltaTime * speed)) , 0, 0));
         if (Input.GetKeyDown(KeyCode.A))
         {
-
+            if (!miraDerecha)
+            {
+                sprite.flipX = true;
+                miraDerecha = !miraDerecha;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (miraDerecha)
+            {
+                sprite.flipX = false;
+                miraDerecha = !miraDerecha;
+            }
         }
     }
     private void FixedUpdate()
