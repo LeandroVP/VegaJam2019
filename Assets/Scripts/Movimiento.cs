@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    Rigidbody2D rb;
-    float ejeX;
+    public static bool activable = false;
     public float speed;
     public float jumpForce;
     public float distanciaRaycast;
+
     public LayerMask mascara;
+    Rigidbody2D rb;
+
+    float ejeX;
     float keyVelocity;
     float currentVelocity;
-    public static bool activable = false;
+
+    bool miraDerecha;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,7 +27,11 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
         ejeX = Input.GetAxis("Horizontal");
-        transform.Translate(new Vector3((ejeX * (Time.deltaTime * speed)) , 0, 0));      
+        transform.Translate(new Vector3((ejeX * (Time.deltaTime * speed)) , 0, 0));
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+
+        }
     }
     private void FixedUpdate()
     {
