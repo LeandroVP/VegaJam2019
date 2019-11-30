@@ -6,11 +6,13 @@ public class RandomTest : MonoBehaviour
 {
     public int[] listaRandom;
     int cantidadDeTeclas;
+    public GameObject teclasManag;
 
     void Awake()
     {
+        CreaTabla();
         int anterior;
-        cantidadDeTeclas = listaRandom.Length;
+        cantidadDeTeclas = teclasManag.transform.childCount;
         anterior = cantidadDeTeclas - 1;
         for(int i = 0; i<anterior; i++)
         {
@@ -26,5 +28,11 @@ public class RandomTest : MonoBehaviour
     {
         
     }
-
+    void CreaTabla()
+    {
+        for(int i = 0; i<teclasManag.transform.childCount; i++)
+        {
+            listaRandom[i] = i;
+        }
+    }
 }
