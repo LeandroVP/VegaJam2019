@@ -5,12 +5,19 @@ using UnityEngine;
 public class RandomTest : MonoBehaviour
 {
     public int[] listaRandom;
-    public int cantidadDeTeclas;
-    void Start()
+    int cantidadDeTeclas;
+
+    void Awake()
     {
-        for(int i = 0; i<cantidadDeTeclas; i++)
+        int anterior;
+        cantidadDeTeclas = listaRandom.Length;
+        anterior = cantidadDeTeclas - 1;
+        for(int i = 0; i<anterior; i++)
         {
-            listaRandom[i] = i;
+            var randomN = Random.Range(i, cantidadDeTeclas);
+            var tmp = listaRandom[i];
+            listaRandom[i] = listaRandom[randomN];
+            listaRandom[randomN] = tmp;
         }
     }
 
@@ -19,4 +26,5 @@ public class RandomTest : MonoBehaviour
     {
         
     }
+
 }
