@@ -27,6 +27,7 @@ public class Activador : MonoBehaviour
             audiosource.Play();
             if(Movimiento.activable == true)
             {
+                GameObjectVariable.GetComponent<Mainscript>().check_turn(numero);
                 Debug.Log("ACTIVO LA NOTA" + numero);
             }
         }
