@@ -7,13 +7,14 @@ public class Activador : MonoBehaviour
 {
     public int numero;
     public AudioClip nota;
+    public GameObject sManager;
     private AudioSource audiosource;
     public GameObject main;
     void Start()
     {
         audiosource = GetComponent<AudioSource> ();
-        audiosource.clip = nota;
-        
+        nota = sManager.GetComponent<SoundManager>().sonidos[numero];
+        audiosource.clip = nota;      
     }
 
     void Update()

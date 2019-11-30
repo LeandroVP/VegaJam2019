@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Mainscript : MonoBehaviour
 {
@@ -33,8 +34,11 @@ public class Mainscript : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
             turno=0;
         
-        }else {
+        }
+        else
+        {
             //Funcion para reiniciar la escena
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         }
         

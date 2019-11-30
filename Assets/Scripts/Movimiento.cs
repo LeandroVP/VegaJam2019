@@ -10,8 +10,8 @@ public class Movimiento : MonoBehaviour
     public float jumpForce;
     public float distanciaRaycast;
     public LayerMask mascara;
-    public float keyVelocity;
-    public float currentVelocity;
+    float keyVelocity;
+    float currentVelocity;
     public static bool activable = false;
     void Start()
     {
