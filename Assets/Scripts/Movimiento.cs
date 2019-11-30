@@ -15,7 +15,7 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
         ejeX = Input.GetAxis("Horizontal");
-        transform.Translate(new Vector3(ejeX * Time.deltaTime * speed, 0, 0));
+        transform.Translate(new Vector3((ejeX * Time.deltaTime) * speed, 0, 0));
         
     }
     
