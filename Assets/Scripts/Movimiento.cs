@@ -5,8 +5,8 @@ using UnityEngine;
 public class Movimiento : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float ejeX;
-    public float speed = 10.5f;
+    float ejeX;
+    public float speed;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -15,8 +15,11 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
         ejeX = Input.GetAxis("Horizontal");
-        transform.Translate(new Vector3((ejeX * Time.deltaTime) * speed, 0, 0));
+        transform.Translate(new Vector3((ejeX * (Time.deltaTime * speed)) , 0, 0));       
+    }
+    private void FixedUpdate()
+    {
         
     }
-    
+
 }
