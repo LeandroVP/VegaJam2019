@@ -12,6 +12,7 @@ public class TeclasManager : MonoBehaviour
         {
             listaTeclas[i] = transform.GetChild(i).gameObject;
             listaTeclas[i].name = randomBox.GetComponent<RandomTest>().listaRandom[i].ToString();
+            listaTeclas[i].gameObject.GetComponent<Activador>().numero = randomBox.GetComponent<RandomTest>().listaRandom[i];
         }
     }
 

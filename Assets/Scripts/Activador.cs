@@ -10,11 +10,11 @@ public class Activador : MonoBehaviour
     public GameObject sManager;
     private AudioSource audiosource;
     public GameObject main;
+
     void Start()
     {
-        audiosource = GetComponent<AudioSource> ();
-        nota = sManager.GetComponent<SoundManager>().sonidos[numero];
-        audiosource.clip = nota;      
+        audiosource = GetComponent<AudioSource>();
+        Invoke("Wait", 0.1f);
     }
 
     void Update()
@@ -35,5 +35,9 @@ public class Activador : MonoBehaviour
             }
         }
     }
-        
+    void Wait()
+    {
+        nota = sManager.GetComponent<SoundManager>().sonidos[numero];
+        audiosource.clip = nota;
+    }    
 }
