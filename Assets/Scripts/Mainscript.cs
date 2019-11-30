@@ -27,15 +27,19 @@ public class Mainscript : MonoBehaviour
         }
         else {
             vidas--;
-        GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
-        turno=0;
+        
         }
-           /* if (vidas != 0)
-            {   
+        
+        if (vidas != 0){
 
-            }
-           else */
+            GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
+            turno=0;
+        
+        }else {
+            //Funcion para reiniciar la escena
         }
+
+        
     }
 
 
