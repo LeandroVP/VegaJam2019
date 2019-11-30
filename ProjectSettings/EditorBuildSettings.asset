@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/LWRP Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/TorcuSandbox.unity
+    guid: 48a6279613f6e4d4e82b06d0765c0221
   m_configObjects: {}
