@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Activador : MonoBehaviour
 {
     public int numero;
-
+    public AudioClip nota;
+    private AudioSource audiosource;
     void Start()
     {
+        audiosource = GetComponent<AudioSource> ();
+        audiosource.clip = nota;
         
     }
 
@@ -20,10 +24,17 @@ public class Activador : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             Debug.Log("REPRODUZCO LA NOTA" + numero);
+            audiosource.Play();
             if(Movimiento.activable == true)
             {
                 Debug.Log("ACTIVO LA NOTA" + numero);
             }
         }
+    }
+
+    public void Playsound(int numero)
+    {
+       // source.PlayOneShot(clip);
+        
     }
 }
