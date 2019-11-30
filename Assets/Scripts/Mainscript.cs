@@ -28,9 +28,7 @@ public class Mainscript : MonoBehaviour
         else {
             vidas--;
         
-        }
-        
-        if (vidas != 0){
+         if (vidas != 0){
 
             GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
             turno=0;
@@ -38,6 +36,9 @@ public class Mainscript : MonoBehaviour
         }else {
             //Funcion para reiniciar la escena
         }
+        }
+        
+       
 
         
     }
