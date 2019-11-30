@@ -8,6 +8,7 @@ public class Activador : MonoBehaviour
     public int numero;
     public AudioClip nota;
     private AudioSource audiosource;
+    public GameObject main;
     void Start()
     {
         audiosource = GetComponent<AudioSource> ();
@@ -27,15 +28,11 @@ public class Activador : MonoBehaviour
             audiosource.Play();
             if(Movimiento.activable == true)
             {
-                GameObjectVariable.GetComponent<Mainscript>().check_turn(numero);
+                main.GetComponent<Mainscript>().check_turn(numero);
+
                 Debug.Log("ACTIVO LA NOTA" + numero);
             }
         }
     }
-
-    public void Playsound(int numero)
-    {
-       // source.PlayOneShot(clip);
         
-    }
 }

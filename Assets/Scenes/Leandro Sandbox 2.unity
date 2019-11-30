@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f207f5f78a238a4689d0005fc13befe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomBox: {fileID: 0}
   listaTeclas:
   - {fileID: 0}
   - {fileID: 0}
@@ -192,6 +193,11 @@ PrefabInstance:
       propertyPath: nota
       value: 
       objectReference: {fileID: 8300000, guid: 2cba86379ed6a8c45b22f022c39c9807, type: 3}
+    - target: {fileID: -3275811888484801022, guid: 9290049321ee8084fb2a004a378811fd,
+        type: 3}
+      propertyPath: main
+      value: 
+      objectReference: {fileID: 1976479858}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -739,6 +745,11 @@ PrefabInstance:
       propertyPath: nota
       value: 
       objectReference: {fileID: 8300000, guid: 833e9374dec95064cb10f0b8e6adefe6, type: 3}
+    - target: {fileID: -3275811888484801022, guid: 9290049321ee8084fb2a004a378811fd,
+        type: 3}
+      propertyPath: main
+      value: 
+      objectReference: {fileID: 1976479858}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1232,6 +1243,11 @@ PrefabInstance:
       propertyPath: nota
       value: 
       objectReference: {fileID: 8300000, guid: 812656e172784a24591249f9f065811c, type: 3}
+    - target: {fileID: -3275811888484801022, guid: 9290049321ee8084fb2a004a378811fd,
+        type: 3}
+      propertyPath: main
+      value: 
+      objectReference: {fileID: 1976479858}
     - target: {fileID: 380272752456923026, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_UsedByEffector
