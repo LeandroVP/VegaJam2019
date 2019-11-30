@@ -604,8 +604,6 @@ MonoBehaviour:
   mascara:
     serializedVersion: 2
     m_Bits: 311
-  keyVelocity: 0
-  currentVelocity: 0
 --- !u!50 &896665675
 Rigidbody2D:
   serializedVersion: 4
@@ -1050,6 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848bd624cc5069240b1902a7caab9d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  main: {fileID: 86112230}
 --- !u!4 &1976479860
 Transform:
   m_ObjectHideFlags: 0
