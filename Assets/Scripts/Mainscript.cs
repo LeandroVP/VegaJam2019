@@ -6,6 +6,7 @@ public class Mainscript : MonoBehaviour
 {
 
     private int turno = 0;
+    private int vidas = 2;
     private Vector2 pos_inicial;
 
     // Start is called before the first frame update
@@ -25,8 +26,15 @@ public class Mainscript : MonoBehaviour
             turno ++;
         }
         else {
-            GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
-            turno=0;
+            vidas--;
+        GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
+        turno=0;
+        }
+           /* if (vidas != 0)
+            {   
+
+            }
+           else */
         }
     }
 
