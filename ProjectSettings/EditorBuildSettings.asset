@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TorcuSandbox.unity
     guid: 48a6279613f6e4d4e82b06d0765c0221
+  - enabled: 1
+    path: Assets/Scenes/Leandro Sandbox 2.unity
+    guid: 7af7702ef69501d40a3949a22c823d31
   m_configObjects: {}
