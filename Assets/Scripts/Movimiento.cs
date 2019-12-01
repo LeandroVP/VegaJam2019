@@ -35,7 +35,7 @@ public class Movimiento : MonoBehaviour
     void Update()
     {
         print((localSpeed));
-        localSpeed = (transform.position - mLastPosition).magnitude / Time.deltaTime;
+        localSpeed = Mathf.Abs(transform.position.x - mLastPosition.x) / Time.deltaTime;
         mLastPosition = transform.position;
         animPersonaje.SetFloat("speed", localSpeed);
 
