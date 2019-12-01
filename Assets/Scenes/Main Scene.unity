@@ -2647,7 +2647,7 @@ MonoBehaviour:
   Win: {fileID: 91365971}
   canvas: {fileID: 0}
   animPuerta: {fileID: 1655928290}
-  NextScene: map2
+  mapaN: map2
   fader: {fileID: 366921010}
 --- !u!4 &1703506659
 Transform:
