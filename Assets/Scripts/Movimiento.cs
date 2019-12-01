@@ -8,12 +8,12 @@ public class Movimiento : MonoBehaviour
     public float speed;
     public float jumpForce;
     public float distanciaRaycast;
+    public float keyVelocity;
 
     public LayerMask mascara;
     Rigidbody2D rb;
 
     float ejeX;
-    float keyVelocity;
     float currentVelocity;
 
     bool miraDerecha;
@@ -49,19 +49,21 @@ public class Movimiento : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        Debug.DrawLine((transform.position + new Vector3(0.5f, 0, 0)), transform.position + new Vector3(0.5f, -distanciaRaycast * transform.localScale.x, 0), Color.white, Mathf.Infinity);
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
-            RaycastHit2D rHit = Physics2D.Raycast(transform.position + new Vector3(0.5f,0,0), Vector2.down, distanciaRaycast, mascara);
-            RaycastHit2D rHit2 = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0, 0), Vector2.down, distanciaRaycast, mascara);
+           
+            RaycastHit2D rHit = Physics2D.Raycast(transform.position + new Vector3(0.5f,0,0), Vector2.down, distanciaRaycast * transform.localScale.x, mascara);
+            RaycastHit2D rHit2 = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0, 0), Vector2.down, distanciaRaycast * transform.localScale.x, mascara);
             if (rHit.collider != null || rHit2.collider != null)
             {
                 Saltar(); 
             }
         }
 
-        if(rb.velocity.y *-1 <= -keyVelocity)
+        if(rb.velocity.y <= keyVelocity)
         {
-            activable = false;
+            activable = true;
         }
         else
         {
@@ -75,6 +77,6 @@ public class Movimiento : MonoBehaviour
     }
     void Desactiva()
     {
-        activable = true;
+        activable = false;
     }
 }
