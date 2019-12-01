@@ -15,6 +15,7 @@ public class Mainscript : MonoBehaviour
     private Vector2 distancia_win;
     public GameObject canvas;
     public Animator animPuerta;
+    private bool won = false;
 
     public GameObject fader;
 
@@ -48,12 +49,13 @@ public class Mainscript : MonoBehaviour
     }
 
     public void check_turn(int n_tecla){
-
+        if(!won){
         if(n_tecla == turno){
             turno ++;
             if (turno == teclas_totales)
             {
                 animPuerta.SetTrigger("Abre");
+                won=true;
                 
             }
         }
@@ -73,6 +75,7 @@ public class Mainscript : MonoBehaviour
             }
         }
         
+    }
     }
 
 
