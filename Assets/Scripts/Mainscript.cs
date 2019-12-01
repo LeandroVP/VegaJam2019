@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Mainscript : MonoBehaviour
-{
-
+{   
     private int turno = 0;
     public int vidas = 1;
     private Vector2 pos_inicial;
@@ -64,21 +63,18 @@ public class Mainscript : MonoBehaviour
         else {
             vidas--;
         
-         if (vidas != 0){
+            if (vidas != 0){
 
-            GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
-            turno=0;
+                GameObject.FindGameObjectWithTag("Player").transform.position=pos_inicial;
+                turno=0;
         
+            }
+            else
+            {
+                //Funcion para reiniciar la escena
+                // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
-        else
-        {
-            //Funcion para reiniciar la escena
-           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-        }
-        
-       
-
         
     }
 
