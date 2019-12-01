@@ -16,21 +16,33 @@ public class Movimiento : MonoBehaviour
     float ejeX;
     float currentVelocity;
 
+    float localSpeed;
+    Vector3 mLastPosition; 
+
     bool miraDerecha;
     SpriteRenderer sprite;
+
+    Animator animPersonaje;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         currentVelocity = 0;
         sprite = GetComponent<SpriteRenderer>();
+        animPersonaje = GetComponent<Animator>();
     }
 
     void Update()
     {
+        print((localSpeed));
+        localSpeed = (transform.position - mLastPosition).magnitude / Time.deltaTime;
+        mLastPosition = transform.position;
+        animPersonaje.SetFloat("speed", localSpeed);
+
         ejeX = Input.GetAxis("Horizontal");
         transform.Translate(new Vector3((ejeX * (Time.deltaTime * speed)) , 0, 0));
-        if (Input.GetKeyDown(KeyCode.A))
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (!miraDerecha)
             {
@@ -38,7 +50,8 @@ public class Movimiento : MonoBehaviour
                 miraDerecha = !miraDerecha;
             }
         }
-        if (Input.GetKeyDown(KeyCode.D))
+
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (miraDerecha)
             {
@@ -46,18 +59,23 @@ public class Movimiento : MonoBehaviour
                 miraDerecha = !miraDerecha;
             }
         }
+        
     }
     private void FixedUpdate()
     {
-        Debug.DrawLine((transform.position + new Vector3(0.5f, 0, 0)), transform.position + new Vector3(0.5f, -distanciaRaycast * transform.localScale.x, 0), Color.white, Mathf.Infinity);
+        //Debug.DrawLine((transform.position + new Vector3(0.5f, 0, 0)), transform.position + new Vector3(0.5f, -distanciaRaycast * transform.localScale.x, 0), Color.white, Mathf.Infinity);
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
-           
             RaycastHit2D rHit = Physics2D.Raycast(transform.position + new Vector3(0.5f,0,0), Vector2.down, distanciaRaycast * transform.localScale.x, mascara);
             RaycastHit2D rHit2 = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0, 0), Vector2.down, distanciaRaycast * transform.localScale.x, mascara);
             if (rHit.collider != null || rHit2.collider != null)
             {
-                Saltar(); 
+                if(rb.velocity.y == 0)
+                {
+                    Saltar();
+                    animPersonaje.SetTrigger("Jump");
+                }
+               
             }
         }
 
