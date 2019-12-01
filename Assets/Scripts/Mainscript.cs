@@ -30,7 +30,7 @@ public class Mainscript : MonoBehaviour
         distancia_win = Player.transform.position - Win.transform.position;
 
         print(distancia_win.magnitude);
-        if(distancia_win.magnitude < 2f)
+        if(distancia_win.magnitude < 1f)
         {
             Debug.Break();
         }
