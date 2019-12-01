@@ -294,3 +294,182 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1931938156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1110318494851284854, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_PointLightInnerAngle
+      value: 177.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110318494851284854, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_PointLightOuterAngle
+      value: 278.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110318494851284854, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110318494851284854, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110318494851284854, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.538
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378499852029664, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Name
+      value: Plano3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378499978915982, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8113208
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378499978915982, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.34825563
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378499978915982, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.57706434
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378500936366528, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378500936366528, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378500936366528, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501270524848, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501270524850, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Name
+      value: Plano2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501270524850, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501370907140, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Name
+      value: Plano4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501403118108, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 153
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501403118110, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Name
+      value: Plano1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501403118110, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26366702
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.09353121
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1224766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327524, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314378501679327527, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Name
+      value: background_01_bosque
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516736318469829001, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.13207549
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516736318469829001, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.13207549
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516736318469829001, guid: 0b2bb573f9bfbd54baac5bb7f3e105df,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.13207549
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b2bb573f9bfbd54baac5bb7f3e105df, type: 3}
