@@ -12,11 +12,15 @@ public class Activador : MonoBehaviour
     public GameObject main;
     public Animator animColision;
     public bool animandose = false;
+    public SpriteRenderer srBrillo;
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
         Invoke("Wait", 0.1f);
         animColision = GetComponent<Animator>();
+        srBrillo = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        srBrillo.color = new Color(0, 0, 0, 0);
+
     }
 
     void Update()
@@ -34,6 +38,7 @@ public class Activador : MonoBehaviour
             {
                 main.GetComponent<Mainscript>().check_turn(numero);
                 animColision.SetBool("Activa", true);
+                StartCoroutine(Enciende());
                // Invoke("RetrasaSonido", 0.5f);
             }
         }
@@ -58,5 +63,14 @@ public class Activador : MonoBehaviour
     void SeñalFalse()
     {
         animandose = false;
+    }
+    IEnumerator Enciende()
+    {
+        for(int i = 0; i<50; i++)
+        {
+            srBrillo.color = new Color(119, 148, 159, 0 + i / 100f);
+            yield return null;
+        }
+        //srBrillo.color = new Color(119, 148, 159, 1);
     }
 }
