@@ -7,7 +7,7 @@ public class Mainscript : MonoBehaviour
 {
 
     private int turno = 0;
-    private int vidas = 2;
+    public int vidas = 1;
     private Vector2 pos_inicial;
     private int teclas_totales;
     public GameObject Nteclas;
@@ -34,6 +34,7 @@ public class Mainscript : MonoBehaviour
     }
 
     public void check_turn(int n_tecla){
+        print(n_tecla);
         if(n_tecla == turno){
             turno ++;
             if (turno == teclas_totales)
@@ -54,7 +55,7 @@ public class Mainscript : MonoBehaviour
         else
         {
             //Funcion para reiniciar la escena
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         }
         

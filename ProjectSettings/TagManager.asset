@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MainController
   - Door
+  - Tecla
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ public class Activador : MonoBehaviour
     private AudioSource audiosource;
     public GameObject main;
     public Animator animColision;
+    public bool animandose = false;
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
@@ -28,11 +29,12 @@ public class Activador : MonoBehaviour
         {
             animColision.SetBool("Pisando", true);
             audiosource.Play();
-            if(Movimiento.activable == true)
+            if(Movimiento.activable == true && animandose == false)
             {
-              //  main.GetComponent<Mainscript>().check_turn(numero);
-
-                Debug.Log("ACTIVO LA NOTA" + numero);
+                main.GetComponent<Mainscript>().check_turn(numero);
+                animColision.SetBool("Activa", true);
+                Invoke("RetrasaSonido", 0.5f);
+                animandose = true;
             }
         }
     }
@@ -48,5 +50,13 @@ public class Activador : MonoBehaviour
     {
         nota = sManager.GetComponent<SoundManager>().sonidos[numero];
         audiosource.clip = nota;
-    }    
+    } 
+    void RetrasaSonido()
+    {
+        audiosource.Play();
+    }
+    void SeñalFalse()
+    {
+        animandose = false;
+    }
 }
