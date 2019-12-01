@@ -34,7 +34,6 @@ public class Movimiento : MonoBehaviour
 
     void Update()
     {
-        print((localSpeed));
         localSpeed = Mathf.Abs(transform.position.x - mLastPosition.x) / Time.deltaTime;
         mLastPosition = transform.position;
         animPersonaje.SetFloat("speed", localSpeed);
@@ -70,7 +69,7 @@ public class Movimiento : MonoBehaviour
             RaycastHit2D rHit2 = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0, 0), Vector2.down, distanciaRaycast * transform.localScale.x, mascara);
             if (rHit.collider != null || rHit2.collider != null)
             {
-                if(rb.velocity.y == 0)
+                if(rb.velocity.y <= 0.2f)
                 {
                     Saltar();
                     animPersonaje.SetTrigger("Jump");
