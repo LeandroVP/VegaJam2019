@@ -162,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86112230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6844841, y: -0.045579806, z: -1.4697452}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 711715331}
@@ -294,17 +294,17 @@ PrefabInstance:
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.78
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3264202
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4697452
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
@@ -350,6 +350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tecla (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 380272752456923031, guid: 9290049321ee8084fb2a004a378811fd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tecla
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9290049321ee8084fb2a004a378811fd, type: 3}
@@ -910,17 +915,17 @@ PrefabInstance:
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.85
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3264202
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4697452
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
@@ -966,6 +971,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tecla (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 380272752456923031, guid: 9290049321ee8084fb2a004a378811fd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tecla
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9290049321ee8084fb2a004a378811fd, type: 3}
@@ -1421,17 +1431,17 @@ PrefabInstance:
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3855162
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3264202
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4697452
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 380272752456923029, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
@@ -1476,6 +1486,11 @@ PrefabInstance:
     - target: {fileID: 380272752456923031, guid: 9290049321ee8084fb2a004a378811fd,
         type: 3}
       propertyPath: m_Name
+      value: Tecla
+      objectReference: {fileID: 0}
+    - target: {fileID: 380272752456923031, guid: 9290049321ee8084fb2a004a378811fd,
+        type: 3}
+      propertyPath: m_TagString
       value: Tecla
       objectReference: {fileID: 0}
     m_RemovedComponents: []
