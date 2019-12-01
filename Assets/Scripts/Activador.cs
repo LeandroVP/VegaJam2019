@@ -25,16 +25,16 @@ public class Activador : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player")&& animandose == false)
         {
+            animandose = true;
             animColision.SetBool("Pisando", true);
             audiosource.Play();
-            if(Movimiento.activable == true && animandose == false)
+            if(Movimiento.activable == true)
             {
                 main.GetComponent<Mainscript>().check_turn(numero);
                 animColision.SetBool("Activa", true);
-                Invoke("RetrasaSonido", 0.5f);
-                animandose = true;
+               // Invoke("RetrasaSonido", 0.5f);
             }
         }
     }
@@ -53,7 +53,7 @@ public class Activador : MonoBehaviour
     } 
     void RetrasaSonido()
     {
-        audiosource.Play();
+        //audiosource.Play();
     }
     void SeñalFalse()
     {

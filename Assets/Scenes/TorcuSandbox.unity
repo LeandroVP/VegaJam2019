@@ -765,7 +765,7 @@ MonoBehaviour:
   speed: 10
   jumpForce: 750
   distanciaRaycast: 0.58
-  keyVelocity: -1.41
+  keyVelocity: -5.41
   mascara:
     serializedVersion: 2
     m_Bits: 311
@@ -1752,6 +1752,7 @@ MonoBehaviour:
   sManager: {fileID: 1944583315}
   main: {fileID: 1479981538}
   animColision: {fileID: 0}
+  animandose: 0
 --- !u!114 &5947560150110487067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1769,6 +1770,7 @@ MonoBehaviour:
   sManager: {fileID: 1944583315}
   main: {fileID: 1479981538}
   animColision: {fileID: 0}
+  animandose: 0
 --- !u!114 &6327269937492736916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,3 +1788,4 @@ MonoBehaviour:
   sManager: {fileID: 1944583315}
   main: {fileID: 1479981538}
   animColision: {fileID: 0}
+  animandose: 0
