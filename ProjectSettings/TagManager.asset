@@ -9,6 +9,7 @@ TagManager:
   - Tecla
   - Canvas
   - Transition
+  - Fader
   layers:
   - Default
   - TransparentFX
