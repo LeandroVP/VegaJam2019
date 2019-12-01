@@ -16,6 +16,7 @@ public class Mainscript : MonoBehaviour
     public GameObject canvas;
     public Animator animPuerta;
     private bool won = false;
+    public string mapaN;
 
     public GameObject fader;
 
@@ -35,7 +36,7 @@ public class Mainscript : MonoBehaviour
         {
             print("Activo");
             fader.GetComponent<FadeDark>().Oscurecer();
-            SceneManager.LoadScene("Main Scene");
+            Invoke("Retrasar", 1.5f);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -78,6 +79,9 @@ public class Mainscript : MonoBehaviour
         
     }
     }
-
+    void Retrasar()
+    {
+        SceneManager.LoadScene(mapaN);
+    }
 
 }

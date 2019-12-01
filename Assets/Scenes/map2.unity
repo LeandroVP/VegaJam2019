@@ -1478,7 +1478,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 77
+  m_SortingOrder: 51
   m_Sprite: {fileID: 21300000, guid: 3c74002907c75ae4abc9e70014bcb247, type: 3}
   m_Color: {r: 0.93850446, g: 0.7688679, b: 1, a: 1}
   m_FlipX: 0
@@ -1498,7 +1498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181017555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07669664, y: 0.002825287, z: -0.26185313}
+  m_LocalPosition: {x: 0.07669664, y: 0.0473, z: -0.26185313}
   m_LocalScale: {x: 0.017566627, y: 0.017566627, z: 0.017566627}
   m_Children: []
   m_Father: {fileID: 1114567242}
@@ -1558,7 +1558,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 69
+  m_SortingOrder: 47
   m_Sprite: {fileID: 21300000, guid: c8b570ddcc433cb4ba07fe73c1864946, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1973,7 +1973,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 21.333334, y: 12}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2563,7 +2563,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1703506659}
   - component: {fileID: 1703506658}
-  - component: {fileID: 1703506660}
   m_Layer: 0
   m_Name: Main
   m_TagString: MainController
@@ -2578,7 +2577,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703506657}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 848bd624cc5069240b1902a7caab9d6f, type: 3}
   m_Name: 
@@ -2588,8 +2587,9 @@ MonoBehaviour:
   Player: {fileID: 1998689637}
   Win: {fileID: 91365971}
   canvas: {fileID: 0}
-  animPuerta: {fileID: 0}
-  fader: {fileID: 0}
+  animPuerta: {fileID: 1181017556}
+  mapaN: Menu
+  fader: {fileID: 2044921138}
 --- !u!4 &1703506659
 Transform:
   m_ObjectHideFlags: 0
@@ -2604,25 +2604,6 @@ Transform:
   m_Father: {fileID: 762238086}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1703506660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703506657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba480e92e95d57742ac61aa881d72053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidas: 1
-  Nteclas: {fileID: 1419805511}
-  Player: {fileID: 1998689637}
-  Win: {fileID: 91365971}
-  canvas: {fileID: 0}
-  animPuerta: {fileID: 1181017556}
-  fader: {fileID: 2044921138}
 --- !u!1 &1790142363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3112,7 +3093,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2088557254}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: bd46ce5f22794b14f87a393c75a29353, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
