@@ -49,12 +49,12 @@ public class Movimiento : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Debug.DrawLine((transform.position + new Vector3(0.5f, 0, 0)), transform.position + new Vector3(0.5f, -distanciaRaycast, 0), Color.white, Mathf.Infinity);
+        Debug.DrawLine((transform.position + new Vector3(0.5f, 0, 0)), transform.position + new Vector3(0.5f, -distanciaRaycast * transform.localScale.x, 0), Color.white, Mathf.Infinity);
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
            
-            RaycastHit2D rHit = Physics2D.Raycast(transform.position + new Vector3(0.5f,0,0), Vector2.down, distanciaRaycast, mascara);
-            RaycastHit2D rHit2 = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0, 0), Vector2.down, distanciaRaycast, mascara);
+            RaycastHit2D rHit = Physics2D.Raycast(transform.position + new Vector3(0.5f,0,0), Vector2.down, distanciaRaycast * transform.localScale.x, mascara);
+            RaycastHit2D rHit2 = Physics2D.Raycast(transform.position - new Vector3(0.5f, 0, 0), Vector2.down, distanciaRaycast * transform.localScale.x, mascara);
             if (rHit.collider != null || rHit2.collider != null)
             {
                 Saltar(); 

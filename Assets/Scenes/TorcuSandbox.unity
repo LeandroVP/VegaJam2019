@@ -1359,6 +1359,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4003325920874239051, guid: 7fb11a1065864174089fbe377088b1ae,
+        type: 3}
+      propertyPath: distanciaRaycast
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 4003325920874239054, guid: 7fb11a1065864174089fbe377088b1ae,
         type: 3}
       propertyPath: m_Name
