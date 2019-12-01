@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Mainscript : MonoBehaviour
+public class Mainscript1 : MonoBehaviour
 {   
     private int turno = 0;
     public int vidas = 1;
@@ -35,7 +35,7 @@ public class Mainscript : MonoBehaviour
         {
             print("Activo");
             fader.GetComponent<FadeDark>().Oscurecer();
-            SceneManager.LoadScene("Main Scene");
+            SceneManager.LoadScene("map2");
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
