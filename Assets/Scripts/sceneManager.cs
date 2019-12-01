@@ -23,4 +23,8 @@ public class sceneManager : MonoBehaviour
     public void Salir(){
         Application.Quit();
     }
+
+    public void Continuar(){
+        GameObject.FindGameObjectWithTag("Canvas").SetActive(false);
+    }
 }

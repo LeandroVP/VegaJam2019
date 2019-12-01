@@ -14,6 +14,8 @@ public class Mainscript : MonoBehaviour
     public GameObject Player;
     public GameObject Win;
     private Vector2 distancia_win;
+    public GameObject canvas;
+    public bool movimiento = true;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +30,25 @@ public class Mainscript : MonoBehaviour
     {
         distancia_win = Player.transform.position - Win.transform.position;
 
-        if(distancia_win.magnitude < 2f){
+        if(canvas.activeSelf)
+                movimiento = false;
+        else    
+                movimiento = true;
+
+        if(distancia_win.magnitude < 2f)
+        {
             Debug.Log("He ganado");
-            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(canvas.activeSelf)
+                canvas.SetActive(false);
+
+            else 
+                canvas.SetActive(true);
+        }
+
     }
 
     public void check_turn(int n_tecla){

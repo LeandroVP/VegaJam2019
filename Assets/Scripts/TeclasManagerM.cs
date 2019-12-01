@@ -10,10 +10,11 @@ public class TeclasManagerM : MonoBehaviour
     void Start()
     {
         //int nuevos = Random.Range(2,8);
-        int nuevos = 4;
+        int nuevos = 5;
+
         Vector2 nuevaPos = new Vector2(-0.6f, -1f);
         Vector2 espaciado = new Vector2(1.6f, 0f);
-        GameObject Tecla = GameObject.FindGameObjectWithTag("Tecla");
+        //GameObject Tecla = GameObject.FindGameObjectWithTag("Tecla");
     
         for(int i=0;i<nuevos;i++)
         {
