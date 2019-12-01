@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/LWRP Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TorcuSandbox.unity
     guid: 48a6279613f6e4d4e82b06d0765c0221
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LeandroSandbox2.unity
     guid: 7af7702ef69501d40a3949a22c823d31
   - enabled: 1

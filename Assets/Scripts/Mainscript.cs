@@ -17,7 +17,7 @@ public class Mainscript : MonoBehaviour
     public Animator animPuerta;
     private bool won = false;
     public string mapaN;
-
+    public string animName;
     public GameObject fader;
 
     // Start is called before the first frame update
@@ -56,7 +56,7 @@ public class Mainscript : MonoBehaviour
             turno ++;
             if (turno == teclas_totales)
             {
-                animPuerta.SetTrigger("Abre");
+                animPuerta.SetTrigger(animName);
                 won=true;
                 
             }
