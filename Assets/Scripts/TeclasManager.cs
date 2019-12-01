@@ -11,7 +11,7 @@ public class TeclasManager : MonoBehaviour
         print("Tengo " + transform.childCount + " hijos");
         for (int i = 0; i<transform.childCount; i++)
         {
-            listaTeclas[i] = transform.GetChild(i).gameObject;
+            listaTeclas[i] = GameObject.FindGameObjectsWithTag("Tecla")[i];
             listaTeclas[i].name = randomBox.GetComponent<RandomTest>().listaRandom[i].ToString();
             listaTeclas[i].gameObject.GetComponent<Activador>().numero = randomBox.GetComponent<RandomTest>().listaRandom[i];
         }
