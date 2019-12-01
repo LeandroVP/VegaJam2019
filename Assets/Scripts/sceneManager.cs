@@ -17,7 +17,7 @@ public class sceneManager : MonoBehaviour
     }
 
     public void Iniciar(){
-        Application.LoadLevel("LeandroSandbox2");
+        Application.LoadLevel("Main Scene");
     }
 
     public void Salir(){
