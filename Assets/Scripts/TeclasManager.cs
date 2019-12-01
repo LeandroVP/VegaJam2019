@@ -8,7 +8,6 @@ public class TeclasManager : MonoBehaviour
     public GameObject[] listaTeclas;
     void Start()
     {
-        print("Tengo " + transform.childCount + " hijos");
         for (int i = 0; i<transform.childCount; i++)
         {
             listaTeclas[i] = GameObject.FindGameObjectsWithTag("Tecla")[i];

@@ -16,9 +16,9 @@ public class sceneManager : MonoBehaviour
         
     }
 
-    public void Iniciar(){
-        Application.LoadLevel("Main Scene");
-    }
+    //public void Iniciar(){
+    //    Application.LoadLevel("Main Scene");
+    //}
 
     public void Salir(){
         Application.Quit();

@@ -14,14 +14,15 @@ public class Mainscript : MonoBehaviour
     public GameObject Win;
     private Vector2 distancia_win;
     public GameObject canvas;
-    public bool movimiento = true;
+    public Animator animPuerta;
+
+    public GameObject fader;
 
     // Start is called before the first frame update
     void Start()
     {
         pos_inicial = GameObject.FindGameObjectWithTag("Player").transform.position;
         teclas_totales=Nteclas.GetComponent<TeclasManager>().listaTeclas.Length;
-
     }
 
     // Update is called once per frame
@@ -29,14 +30,10 @@ public class Mainscript : MonoBehaviour
     {
         distancia_win = Player.transform.position - Win.transform.position;
 
-        if(canvas.activeSelf)
-                movimiento = false;
-        else    
-                movimiento = true;
-
-        if(distancia_win.magnitude < 2f)
+        if(distancia_win.magnitude < 1f)
         {
-            Debug.Log("He ganado");
+            print("Activo");
+            fader.GetComponent<FadeDark>().Oscurecer();
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -51,12 +48,12 @@ public class Mainscript : MonoBehaviour
     }
 
     public void check_turn(int n_tecla){
-        print(n_tecla);
+
         if(n_tecla == turno){
             turno ++;
             if (turno == teclas_totales)
             {
-                Destroy(GameObject.FindGameObjectWithTag("Door"));
+                animPuerta.SetTrigger("Abre");
                 
             }
         }
@@ -72,7 +69,7 @@ public class Mainscript : MonoBehaviour
             else
             {
                 //Funcion para reiniciar la escena
-                // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
         
