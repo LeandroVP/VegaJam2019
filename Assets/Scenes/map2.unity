@@ -2969,6 +2969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703506659}
   - component: {fileID: 1703506658}
+  - component: {fileID: 1703506660}
   m_Layer: 0
   m_Name: Main
   m_TagString: MainController
@@ -2983,7 +2984,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703506657}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 848bd624cc5069240b1902a7caab9d6f, type: 3}
   m_Name: 
@@ -3009,6 +3010,25 @@ Transform:
   m_Father: {fileID: 762238086}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1703506660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703506657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba480e92e95d57742ac61aa881d72053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 1
+  Nteclas: {fileID: 1419805511}
+  Player: {fileID: 1998689637}
+  Win: {fileID: 91365971}
+  canvas: {fileID: 0}
+  animPuerta: {fileID: 1655928290}
+  fader: {fileID: 2044921138}
 --- !u!1 &1722206549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3265,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4003325920874239054, guid: 7fb11a1065864174089fbe377088b1ae,
     type: 3}
   m_PrefabInstance: {fileID: 1429120970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2044921138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8924341943598757406, guid: a8b2bb4696fc8d94e96483aa6de254c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8924341943235646085}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2054988707
 PrefabInstance:
