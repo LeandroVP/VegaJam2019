@@ -16,6 +16,7 @@ public class Mainscript : MonoBehaviour
     public GameObject canvas;
     public Animator animPuerta;
     private bool won = false;
+    public string NextScene;
 
     public GameObject fader;
 
@@ -35,8 +36,10 @@ public class Mainscript : MonoBehaviour
         {
             print("Activo");
             fader.GetComponent<FadeDark>().Oscurecer();
-            SceneManager.LoadScene("Main Scene");
+            SceneManager.LoadScene(NextScene);
         }
+
+
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
