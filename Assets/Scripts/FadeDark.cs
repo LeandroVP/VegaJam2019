@@ -36,4 +36,8 @@ public class FadeDark : MonoBehaviour
         }
         sprite.color = new Color(0, 0, 0, 1);
     }
+    public void Oscurecer()
+    {
+        StartCoroutine(Oscurece());
+    }
 }
