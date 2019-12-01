@@ -8,12 +8,12 @@ public class Movimiento : MonoBehaviour
     public float speed;
     public float jumpForce;
     public float distanciaRaycast;
+    public float keyVelocity;
 
     public LayerMask mascara;
     Rigidbody2D rb;
 
     float ejeX;
-    float keyVelocity;
     float currentVelocity;
 
     bool miraDerecha;
@@ -59,9 +59,9 @@ public class Movimiento : MonoBehaviour
             }
         }
 
-        if(rb.velocity.y *-1 <= -keyVelocity)
+        if(rb.velocity.y <= keyVelocity)
         {
-            activable = false;
+            activable = true;
         }
         else
         {
@@ -75,6 +75,6 @@ public class Movimiento : MonoBehaviour
     }
     void Desactiva()
     {
-        activable = true;
+        activable = false;
     }
 }
